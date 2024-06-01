@@ -9,21 +9,14 @@ const Footer = () => {
           <p className="mt-2 text-sm">Stay safe with our advanced fire detection and monitoring solution.</p>
         </div>
         <div className="flex flex-wrap justify-center md:justify-end">
+          
           <div className="mb-4 md:mb-0">
-            <h3 className="text-lg font-bold mb-2">Quick Links</h3>
+            <h3 className="text-lg font-bold mb-2">Created by :</h3>
             <ul className="text-sm">
-              <li><a href="#" className="text-white hover:underline">Home</a></li>
-              <li><a href="#" className="text-white hover:underline">About</a></li>
-              <li><a href="#" className="text-white hover:underline">Services</a></li>
-              <li><a href="#" className="text-white hover:underline">Contact</a></li>
-            </ul>
-          </div>
-          <div className="mb-4 md:mb-0">
-            <h3 className="text-lg font-bold mb-2">Resources</h3>
-            <ul className="text-sm">
-              <li><a href="#" className="text-white hover:underline">FAQs</a></li>
-              <li><a href="#" className="text-white hover:underline">Blog</a></li>
-              <li><a href="#" className="text-white hover:underline">Documentation</a></li>
+              <li><a href="#" className="text-white hover:underline">Aadars Gautam</a></li>
+              <li><a href="#" className="text-white hover:underline">Prateek Yadav</a></li>
+              <li><a href="#" className="text-white hover:underline">Sanat mishra</a></li>
+              <li><a href="#" className="text-white hover:underline">Shamim Ahmad</a></li>
             </ul>
           </div>
         </div>

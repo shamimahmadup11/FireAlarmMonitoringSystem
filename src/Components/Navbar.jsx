@@ -18,7 +18,6 @@ const Navbar = () => {
             Server
           </button>
           </Link>
-          
         </div>
       </div>
     </nav>
