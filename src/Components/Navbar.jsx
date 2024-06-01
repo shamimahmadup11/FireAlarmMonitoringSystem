@@ -6,11 +6,7 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center">
           {/* Logo */}
-          <img
-            src="/path/to/your/firealarm-logo.png"
-            alt="Fire Alarm System Logo"
-            className="h-8 w-8"
-          />
+         
           <span className="text-white text-lg font-bold ml-2">
             Fire Alarm System
           </span>

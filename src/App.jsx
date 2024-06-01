@@ -14,19 +14,14 @@ const App = () => {
 
         <h1 className="text-3xl font-bold mb-4">Team Profiles</h1>
 
-        <div className="flex justify-between">
+        <div className="flex justify-around">
           <TeacherProfile
             photo="https://res.cloudinary.com/recsfaculty/image/upload/v1690826665/profilePhotoUploads/yenu2gitzwhv5jkbjbn3.jpg"
             name="Dean"
             title="Dean of the Department"
-            education="Ph.D. in Electrical Engineering"
+            education="Ph.D. in Electronics Engineering"
           />
-          {/* <TeacherProfile
-            photo="https://res.cloudinary.com/recsfaculty/image/upload/v1690826665/profilePhotoUploads/yenu2gitzwhv5jkbjbn3.jpg"
-            name="Himanshu Katiyar"
-            title="HOD"
-            education=""
-          /> */}
+         
           <TeacherProfile
             photo="https://res.cloudinary.com/recsfaculty/image/upload/v1690827289/profilePhotoUploads/deje7qkdx1krnxylnpz5.jpg"
             name="Project Manager"
