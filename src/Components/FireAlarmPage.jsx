@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const FireAlarmPage = () => {
   const [data, setData] = useState([]);
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,16 +21,13 @@ const FireAlarmPage = () => {
     fetchData();
   }, []);
 
- 
-
   return (
     <div className="p-4">
-    
       {data.map((item, index) => (
-        <div key={index} className="mb-2">
-          <p>Entry ID: {item.entry_id}</p>
-          <p>Field 1: {item.field1}</p>
-          <p>Created At: {item.created_at}</p>
+        <div key={index} className="mb-2 bg-white shadow-md rounded p-4">
+          <p className="text-lg font-semibold mb-1">Entry ID: {item.entry_id}</p>
+          <p className="text-gray-600 mb-1">Field 1: {item.field1}</p>
+          <p className="text-gray-600">Created At: {item.created_at}</p>
         </div>
       ))}
     </div>
