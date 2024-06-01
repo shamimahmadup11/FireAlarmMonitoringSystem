@@ -14,7 +14,7 @@ const App = () => {
         <>
           <Navbar />
           <div className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-4">Team Profiles</h1>
+        <h1 className="text-3xl font-bold m-10 text-center">Team Profiles</h1>
 
         <div className="flex justify-around">
           <TeacherProfile
