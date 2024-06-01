@@ -1,17 +1,19 @@
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import FireAlarmPage from './Components/FireAlarmPage';
+
 import TeacherProfile from './Components/TeacherProfile';
 import AboutProject from './Components/About';
 import Footer from './Components/Footer';
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-     
-      <div className="container mx-auto p-4">
-         
+import Server from './Components/Server';
 
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: (
+        <>
+          <Navbar />
+          <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold mb-4">Team Profiles</h1>
 
         <div className="flex justify-around">
@@ -21,7 +23,6 @@ const App = () => {
             title="Dean of the Department"
             education="Ph.D. in Electronics Engineering"
           />
-         
           <TeacherProfile
             photo="https://res.cloudinary.com/recsfaculty/image/upload/v1690827289/profilePhotoUploads/deje7qkdx1krnxylnpz5.jpg"
             name="Project Manager"
@@ -29,12 +30,30 @@ const App = () => {
             education="M.Tech , IIT Rorkee"
           />
         </div>
-        <AboutProject />
-       
       </div>
-      <FireAlarmPage/>
-      <Footer/>
-    </div>
+          <AboutProject />
+          <Footer />
+        </>
+      )
+    },
+    {
+      path: '/server',
+      element: (
+        <>
+          <Navbar />
+          <Server />
+          <Footer />
+        </>
+      )
+    }
+  ]);
+
+  return (
+    <RouterProvider router={router}>
+      
+
+     
+    </RouterProvider>
   );
 };
 

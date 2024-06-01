@@ -10,16 +10,16 @@ const AboutProject = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col justify-center md:mr-8">
-      <div className="flex justify-center mt-auto">
-        <motion.img
-          src="https://mrperfectsolutions.in/assets/images/service/alarm-02.jpg"
-          className="w-96 md:w-1/3 rounded-md shadow-lg"
-          alt="Fire Alarm System"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        />
-      </div>
+        <div className="flex justify-center mt-auto mb-4 md:mb-0">
+          <motion.img
+            src="https://mrperfectsolutions.in/assets/images/service/alarm-02.jpg"
+            className="w-full md:max-w-md rounded-md shadow-lg"
+            alt="Fire Alarm System"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          />
+        </div>
         <h2 className="text-2xl font-bold mb-4 text-center md:text-left">About the Project</h2>
         <p className="text-center md:text-left">
           <span className="font-bold">The Fire Alarm System project</span> aims to provide a robust and reliable solution for detecting fires and alerting relevant authorities. When a fire is detected by the sensors, an alert is immediately displayed on the website, allowing for quick response and action.
