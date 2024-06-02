@@ -6,7 +6,7 @@ const FireAlarmPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.thingspeak.com/channels/2557561/feeds.json?api_key=JDF4WCPVE5FKTHSY&results=2');
+        const response = await fetch('https://api.thingspeak.com/channels/2557561/status.json?api_key=JDF4WCPVE5FKTHSY');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -17,7 +17,6 @@ const FireAlarmPage = () => {
         console.log("something went wrong ")
       } 
     };
-
     fetchData();
   }, []);
 

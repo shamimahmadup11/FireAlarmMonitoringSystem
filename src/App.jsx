@@ -25,7 +25,7 @@ const App = () => {
           />
           <TeacherProfile
             photo="https://res.cloudinary.com/recsfaculty/image/upload/v1690827289/profilePhotoUploads/deje7qkdx1krnxylnpz5.jpg"
-            name="Project Manager"
+            name="Project Supervisor"
             title="Assistant Professor"
             education="M.Tech , IIT Rorkee"
           />
@@ -42,7 +42,7 @@ const App = () => {
         <>
           <Navbar />
           <Server />
-          <Footer />
+          {/* <Footer /> */}
         </>
       )
     }

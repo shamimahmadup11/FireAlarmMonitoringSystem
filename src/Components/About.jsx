@@ -1,48 +1,23 @@
-import { motion } from 'framer-motion';
+// import React from 'react';
+import image1 from "../assets/Images/you.jpg";
+import image2 from '../assets/Images/second.jpeg';
+import image3 from '../assets/Images/Third.jpeg';
+import image4 from '../assets/Images/Third2.jpg';
 
-const AboutProject = () => {
+const About = () => {
   return (
-    <motion.div
-      id="about"
-      className="bg-gray-100 p-6 mt-6 flex flex-col items-center md:flex-row md:items-start rounded-xl shadow-md "
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="flex flex-col justify-center md:mr-10">
-      <h2 className="text-4xl font-bold mb-6   text-indigo-600 text-center">Fire Alarm Monitoring System</h2>
-        <div className="flex justify-center mt-auto mb-6 md:mb-0">
-          <motion.img
-            src="https://mrperfectsolutions.in/assets/images/service/alarm-02.jpg"
-            className="w-full md:max-w-lg rounded-xl shadow-xl m-10"
-            alt="Fire Alarm System"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          />
-        </div>
-       
-        <p className="text-md text-gray-700 text-center md:text-left leading-relaxed">
-          <span className="font-bold">The Fire Alarm System project</span> aims to provide a robust and reliable solution for detecting fires and alerting relevant authorities. When a fire is detected by the sensors, an alert is immediately displayed on the website, allowing for quick response and action.
-          <br />
-          <br />
-          This system offers a range of features, including:
-          <ul className="list-disc pl-6 mt-2 space-y-1">
-            <li>Real-time monitoring of fire hazards</li>
-            <li>Immediate alerts via email, SMS, and website notifications</li>
-            <li>Integration with emergency services for rapid response</li>
-            <li>Dashboard for visualizing system status and historical data</li>
-          </ul>
-          <br />
-          With its advanced technology and user-friendly interface, the Fire Alarm System project ensures the safety and security of buildings, helping to minimize damage and save lives.
-        </p>
-        <p className="text-md text-gray-700 text-center mt-4 leading-relaxed">
-          <span className="font-bold">The Fire Alarm Monitoring System</span> is an advanced solution designed to enhance the safety and security of buildings by providing real-time monitoring and early detection of fire hazards. This system integrates state-of-the-art sensors and electronic components to detect smoke, heat, and flames, ensuring that any potential fire threats are identified promptly and accurately.
-        </p>
+    <div className="p-6 bg-gray-100 flex flex-col">
+      <div>
+        Images content of project
       </div>
-      
-    </motion.div>
+      <div className="flex flex-wrap justify-center md:justify-between gap-6">
+        <img src={image1} alt="Image 1" className="w-full md:w-[45vw] h-[40vh] md:h-[90vh] object-cover rounded-lg shadow-md" />
+        <img src={image2} alt="Image 2" className="w-full md:w-[45vw] h-[40vh] md:h-[90vh] object-cover rounded-lg shadow-md" />
+        <img src={image3} alt="Image 3" className="w-full md:w-[45vw] h-[40vh] md:h-[90vh] object-cover rounded-lg shadow-md" />
+        <img src={image4} alt="Image 4" className="w-full md:w-[45vw] h-[40vh] md:h-[90vh] object-cover rounded-lg shadow-md" />
+      </div>
+    </div>
   );
 };
 
-export default AboutProject;
+export default About;

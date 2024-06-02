@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h3 className="text-lg font-bold mb-2">Created by :</h3>
             <ul className="text-sm">
-              <li><a href="#" className="text-white hover:underline">Aadars Gautam</a></li>
+              <li><a href="#" className="text-white hover:underline">Aadarsh Gautam</a></li>
               <li><a href="#" className="text-white hover:underline">Prateek Yadav</a></li>
               <li><a href="#" className="text-white hover:underline">Sanat mishra</a></li>
               <li><a href="#" className="text-white hover:underline">Shamim Ahmad</a></li>
