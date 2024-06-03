@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="p-6 bg-gray-100 flex flex-col">
       <div>
-        Images content of project
+        <h1 className="text-3xl font-bold m-10 text-center">Images content of project</h1>
       </div>
       <div className="flex flex-wrap justify-center md:justify-between gap-6">
         <img src={image1} alt="Image 1" className="w-full md:w-[45vw] h-[40vh] md:h-[90vh] object-cover rounded-lg shadow-md" />
